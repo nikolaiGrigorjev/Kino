@@ -1,0 +1,7 @@
+C:\Users\PC\source\repos\Kino\Kino\bin\Debug\Kino.exe.config
+C:\Users\PC\source\repos\Kino\Kino\bin\Debug\Kino.exe
+C:\Users\PC\source\repos\Kino\Kino\bin\Debug\Kino.pdb
+C:\Users\PC\source\repos\Kino\Kino\obj\Debug\Kino.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\Kino\Kino\obj\Debug\Kino.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\Kino\Kino\obj\Debug\Kino.exe
+C:\Users\PC\source\repos\Kino\Kino\obj\Debug\Kino.pdb
