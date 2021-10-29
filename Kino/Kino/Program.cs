@@ -15,26 +15,26 @@ namespace kino
             int suurus = int.Parse(Console.ReadLine());//считывает переменную suurus, которая считывает со строки
             return suurus;//возращает suurus
         }
-        static int[,] saal = new int[,] { };
-        static int[] ost = new int[] { };
-        static int kohad, read, mitu;
+        static int[,] saal = new int[,] { };//двухмерный массив с запятой 
+        static int[] ost = new int[] { };//одномерный массив
+        static int kohad, read, mitu; 
         static void Saali_taitmine(int suurus)//тут зал строится
         {
-            Random rnd = new Random();//рандом
-            if (suurus == 1)//если первый зал(1) указал пользователь
+            Random rnd = new Random();//Создается рандом 
+            if (suurus == 1)//если первый зал(1) указал пользователь, то в зале будет
             {
-                kohad = 20;//мест в каждом ряду
-                read = 10;//рядов
+                kohad = 20;//20 мест в каждом ряду
+                read = 10;//10 рядов
             }
-            else if (suurus == 2)//если второй зал(2) указал пользователь
+            else if (suurus == 2)//если второй зал(2) указал пользователь, то в зале будет
             {
-                kohad = 20;//мест в каждом ряду
-                read = 20;//рядов
+                kohad = 20;//20 мест в каждом ряду
+                read = 20;//20 рядов
             }
-            else if (suurus == 3)//если третий зал(3) указал пользователь
+            else if (suurus == 3)//если третий зал(3) указал пользователь, то в зале будет
             {
-                kohad = 30;//мест в каждом ряду
-                read = 20;//рядов
+                kohad = 30;//30 мест в каждом ряду
+                read = 20;//20 рядов
             }
             else//иначе
             {
@@ -54,7 +54,7 @@ namespace kino
         static void Saal_ekraanile()//тут происходит вывод на экран зала
         {
             Console.Write("   ");//отступ от левой стороны
-            for (int koht = 0; koht < kohad; koht++)
+            for (int koht = 0; koht < kohad; koht++)//начинается цикл 
             {
                 if (koht.ToString().Length == 2)
                 {
@@ -83,7 +83,7 @@ namespace kino
             mitu = int.Parse(Console.ReadLine());//Считывает сколько билетов купить
             ost = new int[mitu];//объявляется одномерный массив ost
             int p = (kohad - mitu) / 2;//объявляется переменная p, в котором места минус количество билетов делённое на 2
-            bool t = false;
+            bool t = false;//bool true или false 
             int k = 0;//объявляется переменная k
             do
             {
@@ -118,7 +118,7 @@ namespace kino
                 Console.WriteLine("Selles reas ei ole vabu kohti. Kas tahad teises reas otsida?");//выводит на экран то что нет мест в ряду и спрашивают не хотят ли выбрать другой ряд
             }
         }
-        static void Main(string[] args)
+        static void Main(string[] args)  
         {
             int suurus = Saali_suurus();//объявляется переменная suurus 
             Saali_taitmine(suurus);//
